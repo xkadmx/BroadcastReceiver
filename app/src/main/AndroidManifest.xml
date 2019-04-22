@@ -15,6 +15,7 @@
         android:theme="@style/AppTheme">
         <receiver android:name=".SampleReceiver">
             <intent-filter>
+                <action android:name="com.example.broadcastreceiver.mojafajnaakcja"></action>
 
             </intent-filter>
         </receiver>
