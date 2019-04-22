@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode==questionId){
             Log.i("Permission", "Mamy pozwolenie!");
         }
+        Intent intent = new Intent();
+        intent.setAction("com.example.broadcastreceiver.mojafajnaakcja");
+        sendBroadcast(intent);
     }
 
     @Override
