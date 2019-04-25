@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int questionId = 5;
 
-    private IntentFilter filter = new IntentFilter("android.provider.Telephony.SMS_RECEIVER");
+    private IntentFilter filter = new IntentFilter("android.provider.Telephony.SMS_RECEIVED");
     private BroadcastReceiver broadcast = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
